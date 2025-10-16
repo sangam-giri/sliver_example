@@ -16,8 +16,14 @@ class App extends StatelessWidget {
           slivers: [
             SliverAppBar(
               expandedHeight: 300,
+
+              /// We can set minimum height for the appbar using this parameter
+              toolbarHeight: 100,
               backgroundColor: Colors.black,
               pinned: true,
+
+              /// Using floating we can make our app bar visible regardless of where we scroll
+              // floating: true,
               flexibleSpace: FlexibleSpaceBar(
                 background: Image.network(
                   'https://fujiframe.com/assets/images/_3000x2000_fit_center-center_85_none/10085/xhs2-fuji-70-300-Amazilia-Hummingbird.webp',
